@@ -1,0 +1,12 @@
+.Section {
+    padding: 3rem;
+}
+
+.Title {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #F18E60;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 2;
+}

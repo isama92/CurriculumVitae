@@ -1,0 +1,25 @@
+.Container {
+    background-color: #F18E60;
+    padding: 3rem;
+}
+
+.Name, .Surname {
+    display: block;
+    color: #FFF;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.Surname {
+    letter-spacing: 7px;
+}
+
+.Title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 500;
+}

@@ -1,0 +1,15 @@
+{
+  "about.i_am": "Traduzione di: About me section example. {fullstack}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a interdum ipsum. Integer sagittis rutrum commodo. {translation_test} translation test.",
+  "about.title": "chi sono",
+  "about.translation_test": "test traduzionietest",
+  "footer.pdf_download": "Scarica PDF",
+  "g.fullstack_php_developer": "sviluppatore php fullstack",
+  "g.sub_translation": "sotto traduzione",
+  "professional_experience.my_company.management": "Cosa hai {sub_translation}",
+  "section_title": "titolo sezione",
+  "sidebar.section": "sezione",
+  "sidebar.skill_good": "Buona Padronanza",
+  "sidebar.skill_great": "Ottima Padronanza",
+  "sidebar.skill_scholastic": "Livello Scolastico",
+  "sidebar.translation": "traduzione"
+}

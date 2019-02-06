@@ -1,0 +1,16 @@
+.Container {
+    margin-top: 3rem;
+}
+
+.Title {
+    color: #F18E60;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.List {
+    list-style: none;
+    font-size: 1.3rem;
+}

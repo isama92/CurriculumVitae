@@ -1,0 +1,66 @@
+.Container {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #FFF;
+    padding: 0 3rem;
+    background-color: #333;
+}
+
+.Container a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.PDF,
+.Languages,
+.Copyright {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.PDF {
+    justify-content: flex-start;
+}
+
+.Languages {
+    justify-content: center;
+}
+
+.Copyright {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+    .Container {
+        padding: 0 .5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Container {
+        grid-template-rows: 3rem 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Copyright {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .PDF,
+    .Languages,
+    .Copyright {
+        justify-content: center;
+    }
+}

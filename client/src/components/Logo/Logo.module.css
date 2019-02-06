@@ -1,0 +1,22 @@
+.Container {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    width: 85px;
+    padding-bottom: 3px;
+    user-select: none;
+}
+
+.S {
+    font-size: 80px;
+    color: #FFF;
+}
+
+.B {
+    position: absolute;
+    z-index: 5;
+    font-size: 80px;
+    top: 11%;
+    left: 42%;
+    color: #F18E60;
+}

@@ -1,0 +1,55 @@
+version: '3.1'
+
+services:
+  letsencrypt:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: letsencrypt
+    volumes:
+      - /var/dev/certs:/etc/nginx/certs
+      - proxyvhost:/etc/nginx/vhost.d
+      - proxyhtml:/usr/share/nginx/html
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - NGINX_PROXY_CONTAINER=proxy
+    restart: always
+
+  proxy:
+    image: jwilder/nginx-proxy
+    container_name: proxy
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - proxyvhost:/etc/nginx/vhost.d:ro
+      - proxyhtml:/usr/share/nginx/html:ro
+      - /var/dev/certs:/etc/nginx/certs:ro
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    restart: always
+    depends_on:
+      - letsencrypt
+
+  curriculum:
+    image: curriculum
+    container_name: curriculum
+    expose:
+      - 3000
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - AUTH_SECRET=token_used_to_encrypt_the_session
+      - AUTH_TOKEN=login_unique_token
+      - LOGIN_USERNAME=admin
+      - LOGIN_PASSWORD=12345
+      - VIRTUAL_HOST=third.level.domain
+      - LETSENCRYPT_HOST=third.level.domain
+      - LETSENCRYPT_EMAIL=email@email.email
+    restart: always
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
+
+volumes:
+  proxyvhost:
+  proxyhtml:

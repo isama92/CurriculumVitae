@@ -1,0 +1,15 @@
+{
+  "about.i_am": "About me section example. {fullstack}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a interdum ipsum. Integer sagittis rutrum commodo. {translation_test} translation test.",
+  "about.title": "about me",
+  "about.translation_test": "translation test",
+  "footer.pdf_download": "PDF Download",
+  "g.fullstack_php_developer": "fullstack php developer",
+  "g.sub_translation": "sub translation",
+  "professional_experience.my_company.management": "What did {sub_translation}",
+  "section_title": "section title",
+  "sidebar.section": "section",
+  "sidebar.skill_good": "Good Level",
+  "sidebar.skill_great": "Great Level",
+  "sidebar.skill_scholastic": "Scholastic Level",
+  "sidebar.translation": "translation"
+}

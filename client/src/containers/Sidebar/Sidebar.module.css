@@ -1,0 +1,61 @@
+.Container {
+    position: relative;
+    background-color: #202B37;
+    padding: 2rem;
+    width: 300px;
+    min-width: 275px;
+}
+
+.Logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ScrollDown {
+    position: absolute;
+    bottom: 0;
+    right: .5rem;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.ScrollDownEnter {
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+
+.ScrollDownEnterActive {
+    opacity: 1;
+}
+
+.ScrollDownExit {
+    opacity: 1;
+    transition: opacity .2s ease-out;
+}
+
+.ScrollDownExitActive {
+    opacity: 0;
+}
+
+@media screen and (min-width: 601px) and (max-width: 780px) {
+    .Container {
+        padding: 2rem .5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Container {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        bottom: 0;
+        left: -35rem;
+        width: 35rem;
+        max-width: 85vw;
+        transition: left .3s ease-in-out;
+    }
+    .Container.Show {
+        left: 0;
+    }
+}

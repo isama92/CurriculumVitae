@@ -1,0 +1,67 @@
+[
+  {
+    "id": "footer.pdf_download",
+    "defaultMessage": "Scarica PDF",
+    "filepath": "src/containers/Footer/Footer.js"
+  },
+  {
+    "id": "section_title",
+    "defaultMessage": "section title",
+    "filepath": "src/containers/Main/Content/Content.js"
+  },
+  {
+    "id": "about.translation_test",
+    "defaultMessage": "translation test",
+    "filepath": "src/containers/Main/Content/Content.js"
+  },
+  {
+    "id": "about.title",
+    "defaultMessage": "about me",
+    "filepath": "src/containers/Main/Content/Content.js"
+  },
+  {
+    "id": "g.sub_translation",
+    "defaultMessage": "sub translation",
+    "filepath": "src/containers/Main/Content/Content.js"
+  },
+  {
+    "id": "g.fullstack_php_developer",
+    "defaultMessage": "php fullstack developer",
+    "filepath": "src/containers/Main/Content/Content.js"
+  },
+  {
+    "id": "about.i_am",
+    "defaultMessage": "About me section example. {fullstack}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a interdum ipsum. Integer sagittis rutrum commodo. {translation_test} translation test.",
+    "filepath": "src/containers/Main/Content/Content.js"
+  },
+  {
+    "id": "professional_experience.my_company.management",
+    "defaultMessage": "What did {sub_translation}",
+    "filepath": "src/containers/Main/Content/Content.js"
+  },
+  {
+    "id": "sidebar.skill_great",
+    "defaultMessage": "Great Level",
+    "filepath": "src/containers/Sidebar/List/Element/Element.js"
+  },
+  {
+    "id": "sidebar.skill_good",
+    "defaultMessage": "Good Level",
+    "filepath": "src/containers/Sidebar/List/Element/Element.js"
+  },
+  {
+    "id": "sidebar.skill_scholastic",
+    "defaultMessage": "Scholastic Level",
+    "filepath": "src/containers/Sidebar/List/Element/Element.js"
+  },
+  {
+    "id": "sidebar.section",
+    "defaultMessage": "section",
+    "filepath": "src/containers/Sidebar/Sidebar.js"
+  },
+  {
+    "id": "sidebar.translation",
+    "defaultMessage": "translation",
+    "filepath": "src/containers/Sidebar/Sidebar.js"
+  }
+]
