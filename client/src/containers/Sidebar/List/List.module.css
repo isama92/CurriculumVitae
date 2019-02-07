@@ -2,6 +2,10 @@
     margin-top: 3rem;
 }
 
+.Container:last-child {
+    padding-bottom: 6rem;
+}
+
 .Title {
     color: #F18E60;
     text-transform: uppercase;
