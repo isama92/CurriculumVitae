@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Separator from '../Separator/Separator';
+import Separator from '../../../components/Separator/Separator';
 import Section from './Section/Section';
 import Subsection from './Subsection/Subsection';
 import Company from './Company/Company';

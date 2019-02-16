@@ -4,7 +4,7 @@ import FontAwesome from 'react-fontawesome';
 import { injectIntl, defineMessages } from 'react-intl';
 
 import { locales } from '../../config';
-import Flag from './Flag/Flag'
+import Flag from '../../components/Flag/Flag'
 
 import classes from './Footer.module.css';
 
@@ -17,7 +17,7 @@ const messages = defineMessages({
 
 const footer = props => {
     const {intl:{formatMessage}} = props;
-    const languages = locales.map(locale => <Flag key={locale.code} code={locale.code} flag={locale.flag} title={locale.name} setLocale={props.setLocale}/>);
+    const languages = locales.map(locale => <Flag key={locale.code} flag={locale.flag} title={locale.name} setLocale={props.setLocale} locale={locale.code}/>);
     const d = new Date();
     return (
         <footer className={classes.Container}>
