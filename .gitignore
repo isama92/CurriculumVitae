@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+**/node_modules/
+**.log
+
 # production
 /client/build
 
@@ -12,4 +15,3 @@
 
 /server/sessions/
 /server/.env
-**.log
