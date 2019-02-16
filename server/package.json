@@ -44,5 +44,4 @@
     "uuid": "^3.1.0",
     "winston": "^3.1.0"
   },
-  "devDependencies": {}
 }
