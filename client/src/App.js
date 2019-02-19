@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Swipeable from 'react-swipeable';
 
+import withIntl from './withIntl';
+
 import Layout from './containers/Layout/Layout';
 import Sidebar from './containers/Sidebar/Sidebar';
 import Main from './containers/Main/Main';
@@ -60,4 +62,4 @@ App.propTypes = {
     setLocale: PropTypes.func.isRequired,
 };
 
-export default App;
+export default withIntl(App);
